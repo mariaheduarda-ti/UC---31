@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Placar do Campeonato</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🏆 Placar do Campeonato</h1>
+
+    <div class="times">
+
+        <div class="card">
+            <h2>⚽ 🇧🇷 Brasil</h2>
+            <p class="pontos">{{ brasil }} pontos</p>
+            <a class="btn" href="/ponto/brasil">+1 Ponto</a>
+        </div>
+
+        <div class="card">
+            <h2>⚽ 🇦🇷 Argentina</h2>
+            <p class="pontos">{{ argentina }} pontos</p>
+            <a class="btn" href="/ponto/argentina">+1 Ponto</a>
+        </div>
+
+        <div class="card">
+            <h2>⚽ 🇫🇷 França</h2>
+            <p class="pontos">{{ franca }} pontos</p>
+            <a class="btn" href="/ponto/franca">+1 Ponto</a>
+        </div>
+
+        <div class="card">
+            <h2>⚽ 🇪🇸 Espanha</h2>
+            <p class="pontos">{{ espanha }} pontos</p>
+            <a class="btn" href="/ponto/espanha">+1 Ponto</a>
+        </div>
+
+    </div>
+
+    <a class="zerar" href="/zerar">🗑️ Zerar Placar</a>
+
+</div>
+
+</body>
+</html>
